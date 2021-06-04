@@ -22,7 +22,6 @@ public abstract class GeneralSort {
 		Element tmp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = tmp;
-		System.out.println("Swap:"+arr[i].getValue()+" "+ arr[j].getValue());
 		pt.getChildren().addAll(arr[i].moveX(space*(i-j)),arr[j].moveX(space*(j-i)));
 		transitions[transitionsCount] = pt;
 		transitionsCount += 1;

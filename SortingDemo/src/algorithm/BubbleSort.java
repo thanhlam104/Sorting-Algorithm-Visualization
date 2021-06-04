@@ -16,7 +16,6 @@ public class BubbleSort extends GeneralSort{
 		this.transitionsCount = 0;
 	}
 	public void compareElement(Element[] arr, int i, int j) {
-		System.out.println("compare"+ i +" " +j);
 		colorElements(arr, CompareColor, i, j);
 		if (arr[i].getValue() > arr[j].getValue()) {
 			swap(arr, i, j);
@@ -35,9 +34,6 @@ public class BubbleSort extends GeneralSort{
 			colorElements(arr, SortedColor, arr.length-i-1);
 			if (!swapped) 
 				break;
-		}
-		for (Element e: arr) {
-			System.out.println(e.getValue());
 		}
 	}
 	

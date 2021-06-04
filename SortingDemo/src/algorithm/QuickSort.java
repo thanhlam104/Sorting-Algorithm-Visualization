@@ -5,10 +5,7 @@ import javafx.animation.Transition;
 import javafx.scene.paint.Color;
 
 public class QuickSort extends GeneralSort{
-	private Color StartColor = Color.GRAY;
-	private Color CompareColor = Color.PLUM;
-	private Color SortedColor = Color.LIGHTSTEELBLUE;
-	
+
 	private int partition(Element[] arr, int l, int h) {
 		Element pivot = arr[h];
 		colorElements(arr, CompareColor, h);
