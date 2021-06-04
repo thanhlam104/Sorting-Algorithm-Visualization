@@ -12,19 +12,14 @@ public class InsertionSort extends GeneralSort {
 		this.transitions = new Transition[200];
 		this.transitionsCount = 0;
 	}
-	private Color StartColor = Color.GRAY;
-	private Color CompareColor = Color.PLUM;
-	private Color SortedColor = Color.LIGHTSTEELBLUE;
 
 	public void insertionSort(Element[] arr) {
 		for (int i = 1; i < arr.length; i++) {
-			System.out.println("-----");
 			Element key = arr[i];
 			colorElements(arr, CompareColor, i);
 			ParallelTransition pt = new ParallelTransition();
 			int j = i-1;
 			while(j >= 0 && key.getValue() < arr[j].getValue()) {
-				System.out.println(j);
 				colorElements(arr, CompareColor, j);
 				colorElements(arr, StartColor, j);
 				pt.getChildren().add(arr[j].moveX(50));
