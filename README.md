@@ -19,5 +19,5 @@ Mini-project topic 4: Demonstrations of sorting algorithms on array
     + Slide
     + Report
  
-  * Demo video: Uploading Demo-Video.mp4…
+  * Demo video: https://user-images.githubusercontent.com/72648545/120921409-b91a7600-c6ed-11eb-8d59-b65ec2f0b187.mp4
 
