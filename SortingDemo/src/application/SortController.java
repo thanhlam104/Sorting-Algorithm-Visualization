@@ -71,10 +71,11 @@ public class SortController {
     	for (int i = 0; i< arrText.length; i++) {
     		this.arr[i]= new Element(Integer.parseInt(arrText[i]));
     	}
+    	addElements(arr);
     	} else {
     		JOptionPane.showMessageDialog(null, "Number of elements in array cannot exceed 15");
     	}
-    	addElements(arr);
+
     	} catch (NumberFormatException e) {
     		JOptionPane.showMessageDialog(null, "Please input an array of integers, separated by \",\" and contains no space");
     	}
