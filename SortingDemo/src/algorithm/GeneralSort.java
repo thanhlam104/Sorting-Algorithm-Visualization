@@ -10,10 +10,9 @@ import javafx.util.Duration;
 public abstract class GeneralSort {
 	private int width = 30;
 	private int space = 50;
-	protected Color CompareColor ;
-	protected Color SortedColor;
-	protected Color FinalColor;
-	protected Color StartColor;
+	protected Color StartColor = Color.GRAY;
+	protected Color CompareColor = Color.PLUM;
+	protected Color SortedColor = Color.LIGHTSTEELBLUE;
 	public Transition[] transitions = new Transition[500];
 	public int transitionsCount = 0;
 	

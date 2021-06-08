@@ -3,7 +3,7 @@ package algorithm;
 import element.Element;
 import javafx.animation.ParallelTransition;
 import javafx.animation.Transition;
-import javafx.scene.paint.Color;
+
 
 public class InsertionSort extends GeneralSort {
 	

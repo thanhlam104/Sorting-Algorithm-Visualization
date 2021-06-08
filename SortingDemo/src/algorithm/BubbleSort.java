@@ -5,9 +5,7 @@ import javafx.animation.Transition;
 import javafx.scene.paint.Color;
 
 public class BubbleSort extends GeneralSort{
-	private Color StartColor = Color.GRAY;
-	private Color CompareColor = Color.PLUM;
-	private Color SortedColor = Color.LIGHTSTEELBLUE;
+
 	
 	private boolean swapped;
 	
