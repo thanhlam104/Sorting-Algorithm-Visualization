@@ -122,33 +122,23 @@ public class SortController {
     @FXML
     void btnSortPressed(ActionEvent event) {
     	String sortType = btnSort.getText();
+    	GeneralSort sort;
     	if (sortType.equals("BUBBLE SORT")) {
-    		BubbleSort sort = new BubbleSort();
-        	SequentialTransition st = new SequentialTransition();
-        	Transition[] trans = sort.startSort(arr);
-        	for (int i= 0; i < sort.transitionsCount; i++) {
-        		st.getChildren().add(trans[i]);
-        	}
-        	st.play();
+    		sort = new BubbleSort();
     	}
     	else if (sortType.equals("QUICK SORT")) {
-    		QuickSort sort = new QuickSort();
-        	SequentialTransition st = new SequentialTransition();
-        	Transition[] trans = sort.startSort(arr);
-        	for (int i= 0; i < sort.transitionsCount; i++) {
-        		st.getChildren().add(trans[i]);
-        	}
-        	st.play();
+    		sort = new QuickSort();
     	}
     	else {
-    		InsertionSort sort = new InsertionSort();
-        	SequentialTransition st = new SequentialTransition();
-        	Transition[] trans = sort.startSort(arr);
-        	for (int i= 0; i < sort.transitionsCount; i++) {
-        		st.getChildren().add(trans[i]);
-        	}
-        	st.play();
+    		sort = new InsertionSort();
     	}
+    	SequentialTransition st = new SequentialTransition();
+    	Transition[] trans = sort.startSort(arr);
+    	for (int i= 0; i < sort.transitionsCount; i++) {
+    		st.getChildren().add(trans[i]);
+    	}
+    	st.play();
+	
 
 
     }
