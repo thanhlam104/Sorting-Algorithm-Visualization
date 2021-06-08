@@ -2,7 +2,6 @@ package algorithm;
 
 import element.Element;
 import javafx.animation.Transition;
-import javafx.scene.paint.Color;
 
 public class QuickSort extends GeneralSort{
 
