@@ -9,11 +9,7 @@ public class BubbleSort extends GeneralSort{
 	
 	private boolean swapped;
 	
-	public BubbleSort() {
-		this.transitions = new Transition[500];
-		this.transitionsCount = 0;
-	}
-	public void compareElement(Element[] arr, int i, int j) {
+	private void compareElement(Element[] arr, int i, int j) {
 		colorElements(arr, CompareColor, i, j);
 		if (arr[i].getValue() > arr[j].getValue()) {
 			swap(arr, i, j);
@@ -23,7 +19,7 @@ public class BubbleSort extends GeneralSort{
 
 	}
 	
-	public void bubbleSort(Element[] arr) {
+	private void bubbleSort(Element[] arr) {
 		for (int i = 0; i< arr.length; i++) {
 			swapped = false;
 			for (int j = 0; j < arr.length-i-1; j++) {
@@ -41,9 +37,5 @@ public class BubbleSort extends GeneralSort{
 		colorArray(arr, SortedColor);
 		return this.transitions;
 	}
-	public static void main(String[] args) {
-		Element[] arr = {new Element(1),new Element(4),new Element(3),new Element(2)};
-		BubbleSort sort = new BubbleSort();
-		sort.bubbleSort(arr);
-	}
+
 }
