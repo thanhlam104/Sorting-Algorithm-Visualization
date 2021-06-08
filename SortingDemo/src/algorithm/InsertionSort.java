@@ -7,13 +7,9 @@ import javafx.animation.Transition;
 
 public class InsertionSort extends GeneralSort {
 	
-	public InsertionSort() {
-		super();
-		this.transitions = new Transition[200];
-		this.transitionsCount = 0;
-	}
 
-	public void insertionSort(Element[] arr) {
+
+	private void insertionSort(Element[] arr) {
 		for (int i = 1; i < arr.length; i++) {
 			Element key = arr[i];
 			colorElements(arr, CompareColor, i);

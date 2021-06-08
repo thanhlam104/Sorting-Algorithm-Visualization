@@ -54,8 +54,6 @@ public abstract class GeneralSort {
 
 	
 	public abstract Transition[] startSort(Element[] arr);
-	public static void main(String[] args) {
-		Element[] arr = {new Element(1),new Element(2),new Element(3),new Element(4)};
-	}
+
 
 }
