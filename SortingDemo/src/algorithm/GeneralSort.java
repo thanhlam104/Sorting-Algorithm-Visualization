@@ -7,7 +7,7 @@ import javafx.animation.Transition;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
-public abstract class GeneralSort {
+public class GeneralSort {
 	private int width = 30;
 	private int space = 50;
 	protected Color StartColor = Color.GRAY;
@@ -51,9 +51,9 @@ public abstract class GeneralSort {
 		transitionsCount += 1;
 		
 	};
-
-	
-	public abstract Transition[] startSort(Element[] arr);
+	public Transition[] startSort(Element[] arr) {
+		return null;
+	};
 
 
 }
